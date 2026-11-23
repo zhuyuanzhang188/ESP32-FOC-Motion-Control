@@ -43,11 +43,11 @@ firmware/ESP32_FOC_Motion_Control/
 
 **在线重规划：越程制动后返回目标。** 规划位置从约 19.944 rad 继续向负方向运动，在约 6.681 rad 处反向，最后到达 12 rad。
 
-![在线重规划：越程反向](experiments/figures/online_replanning_overshoot_19.944 → 6.681 → 12 rad.png)
+![在线重规划：越程反向](experiments/figures/online_replanning_overshoot.png)
 
 **在线重规划：直接到达目标。** 规划从约 40.508 rad 向 12 rad 运动。
 
-![在线重规划：直接到达](experiments/figures/online_replanning_direct_40.508 → 12 rad.png)
+![在线重规划：直接到达](experiments/figures/online_replanning_direct.png)
 
 完整的采样方法、逐段结果及数据说明见 [实验结果](experiments/results.md)。以上为单轴测试结果；规划速度限制不等于对电机实际瞬时速度、加速度和 Jerk 的独立认证。
 
@@ -78,4 +78,4 @@ firmware/ESP32_FOC_Motion_Control/
 
 本项目使用 [DengFOC](https://github.com/ToanTech/Deng-s-foc-controller) 硬件及参考工程，并通过 [SimpleFOC](https://github.com/simplefoc/Arduino-FOC) 完成底层 FOC 控制。应用层轨迹规划、指令调度、重规划、数据监测与系统集成建立在这些基础上。感谢上述开源项目的作者和贡献者。
 
-关于参考代码的来源与许可证核查，参见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+关于参考代码的来源与许可证核查，参见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。在确认改编代码的版权与分发条件之前，不对整个仓库擅自声明统一开源许可证。
