@@ -43,11 +43,11 @@ firmware/ESP32_FOC_Motion_Control/
 
 **在线重规划：越程制动后返回目标。** 规划位置从约 19.944 rad 继续向负方向运动，在约 6.681 rad 处反向，最后到达 12 rad。
 
-![在线重规划：越程反向](experiments/figures/online_replanning_overshoot.png)
+![在线重规划：越程反向](experiments/figures/online_replanning_overshoot_19.944 → 6.681 → 12 rad.png)
 
 **在线重规划：直接到达目标。** 规划从约 40.508 rad 向 12 rad 运动。
 
-![在线重规划：直接到达](experiments/figures/online_replanning_direct.png)
+![在线重规划：直接到达](experiments/figures/online_replanning_direct_40.508 → 12 rad.png)
 
 完整的采样方法、逐段结果及数据说明见 [实验结果](experiments/results.md)。以上为单轴测试结果；规划速度限制不等于对电机实际瞬时速度、加速度和 Jerk 的独立认证。
 
