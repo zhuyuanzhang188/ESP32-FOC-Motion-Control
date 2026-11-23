@@ -1,5 +1,3 @@
-// Module extracted from the user's V8.1 single-axis firmware.
-// Refactor only: keep original motion formulas, control parameters and sequence.
 // SimpleFOC is an external dependency; this repository does not vendor it.
 #include "TrajectoryPlanner.h"
 
